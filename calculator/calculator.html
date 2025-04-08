@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-5 bg-black">
+    <p class="js-result text-white text-5xl mt-3 mb-5"></p>
+    <div class="flex flex-col gap-3">
+        <div class="flex gap-3">
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('1');">1</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('2');">2</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('3');">3</button>
+            <button class="text-2xl cursor-pointer text-white bg-orange-400 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult(' + ')">+</button>
+        </div>
+        <div class="flex gap-3">
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('4');">4</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('5');">5</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('6');">6</button>
+            <button class="text-2xl cursor-pointer text-white bg-orange-400 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult(' - ');">-</button>
+        </div>
+        <div class="flex gap-3">
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('7');">7</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('8');">8</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('9');">9</button>
+            <button class="text-2xl cursor-pointer text-white bg-orange-400 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult(' * ');">*</button>
+        </div>
+        <div class="flex gap-3">
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('0');">0</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult('.');">.</button>
+            <button class="text-2xl cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showres();">=</button>
+            <button class="text-2xl cursor-pointer text-white bg-orange-400 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="showresult(' / ');">/</button>
+
+        </div>
+        <div>
+            <button class="text-lg cursor-pointer text-white bg-neutral-700 w-14 h-14 rounded-full flex justify-center items-center leading-none" onclick="reset();">clear</button>
+        </div>
+    </div>
+    <script src="calc.js">
+    </script>
+</body>
+</html>
