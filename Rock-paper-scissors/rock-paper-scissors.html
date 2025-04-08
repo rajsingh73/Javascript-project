@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissors</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-950 p-5">
+    <p class="text-white text-5xl font-bold">Rock paper Scissors</p>
+    <div class="flex gap-5 mt-10">
+        <button class="rock-js border-2 cursor-pointer border-solid border-white w-25 h-25 rounded-full flex justify-center items-center"><img class="w-10 h-10" src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png"></button>
+        <button class="paper-js border-2 cursor-pointer border-solid border-white w-25 h-25  rounded-full flex justify-center items-center"><img class="w-10 h-10" src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png"></button>
+        <button class="scissor-js border-2 cursor-pointer border-solid border-white w-25 h-25 rounded-full flex justify-center items-center"><img class="w-10 h-10" src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png"></button>
+    </div>
+    <p class="js-result text-white mt-5"></p>
+    <p class="js-choice text-white mt-5"></p>
+    <p class="js-complete-result text-white mt-5"></p>
+    <button class="reset-js bg-white border-none cursor-pointer py-1 px-3 mt-5">ResetGame</button>
+    <button class="auto-js bg-white border-none cursor-pointer py-1 px-3 mt-5 ml-5">Auto Play</button>
+    <script src="rps.js"></script>
+</body>
+</html>
