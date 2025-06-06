@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .next{
+            display:none;
+        }
+        .bt {
+            width: 100%;
+            cursor: pointer;
+            border: 2px solid #9ca3af; 
+            padding-top: 0.75rem;  
+            padding-bottom: 0.75rem;
+            padding-left: 1rem;   
+            padding-right: 1rem;
+            font-size: 1.25rem;   
+            text-align: left;
+            margin-top: 0.75rem;  
+        }
+        .bt:hover{
+            background-color:#a2afc5;
+        }
+        .bt:disabled{
+            cursor:no-drop;
+        }
+        .correct{
+            background-color:rgb(55, 149, 55);
+        }
+        .correct:hover{
+            background-color:rgb(55, 149, 55);
+        }
+        .incorrect{
+            background-color:rgb(249, 73, 73);
+        }
+
+    </style>
+</head>
+<body class="bg-indigo-950  min-h-screen w-full flex justify-center items-center">
+    <div class="w-1/2 bg-white rounded-lg text-black py-6 px-4">
+        <p class="text-3xl text-indigo-900 border-b-2 font-bold pb-14">Simple quize</p>
+        <p class="question text-2xl mt-6 text-indigo-950 font-semibold">Question display here</p>
+        <div class="button-container w-full">
+            <button class="w-full bt cursor-pointer border-2 border-gray-400 py-3 px-4 text-xl text-left mt-3">btn 1</button>
+            <button class="w-full bt cursor-pointer border-2 border-gray-400 py-3 px-4 text-xl text-left mt-3">btn 2</button>
+            <button class="w-full bt cursor-pointer border-2 border-gray-400 py-3 px-4 text-xl text-left mt-3">btn 3</button>
+            <button class="w-full bt cursor-pointer border-2 border-gray-400 py-3 px-4 text-xl text-left mt-3">btn 4</button>
+        </div>
+        <div class="w-full mt-6 flex justify-center items-center">
+            <button class="py-2 next px-8 rounded-lg cursor-pointer text-white bg-violet-600">Next</button>
+        </div>
+    </div>
+    <script src="quize.js"></script>
+</body>
+</html>
