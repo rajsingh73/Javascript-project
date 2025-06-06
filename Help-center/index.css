@@ -1,0 +1,65 @@
+html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        
+        .input-transparent {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Carousel styling */
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            display: flex;
+            transition: transform 1s ease;
+            height: 100%;
+        }
+        
+        .carousel-item {
+            min-width: 100%;
+            height: 100%;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Form container */
+        .form-container {
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .carousel-container, .form-container {
+                width: 100%;
+            }
+            
+            .carousel-container {
+                height: 30vh;
+            }
+            
+            .form-container {
+                height: 70vh;
+            }
+        }
